@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/cafe_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,10 +15,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter App',
       theme: ThemeData(
         primarySwatch: Colors.brown,
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(
+              fontSize: 28, fontWeight: FontWeight.w600, color: Colors.brown),
+        ),
       ),
-     
-      home:CafeScreen(),
+      home: const CafeScreen(),
     );
   }
 }
-
