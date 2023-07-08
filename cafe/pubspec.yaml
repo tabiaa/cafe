@@ -63,6 +63,10 @@ flutter:
   assets:
     - assets/logo_and_espresso.png
     - assets/get_started.png
+    - assets/cappucino.png
+    - assets/latte.png
+    - assets/mocha.png
+    - assets/macchiato.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
