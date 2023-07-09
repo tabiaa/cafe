@@ -24,42 +24,61 @@ class MenuScreen extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PreferencesScreen(
+                                      appBarText: "Espresso",
+            imageAddress: "assets/logo_and_espresso.png",
+      
                                       )));
           }),
            ReusableAppbar2(
+           
             appBarText: "Cappuccino",
             imageAddress: "assets/cappucino.png",
              onPressed:(){Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PreferencesScreen(
+                                     appBarText: "Cappuccino",
+            imageAddress: "assets/cappucino.png",
+            
                                       )));
           }),
            ReusableAppbar2(
+           
             appBarText: "Macciato",
             imageAddress: "assets/macchiato.png",
              onPressed:(){Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PreferencesScreen(
+                                      appBarText: "Macciato",
+            imageAddress: "assets/macchiato.png",
+             
                                       )));
           }),
            ReusableAppbar2(
+         
             appBarText: "Mocha",
             imageAddress: "assets/mocha.png",
              onPressed:(){Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PreferencesScreen(
+                                      appBarText: "Mocha",
+            imageAddress: "assets/mocha.png",
+            
                                       )));
           }),
            ReusableAppbar2(
+          
             appBarText: "Latte",
             imageAddress: "assets/latte.png",
              onPressed:(){Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => PreferencesScreen(
+                                    appBarText: "Latte",
+            imageAddress: "assets/latte.png",
+          
                                       )));
           }),
         
@@ -97,9 +116,7 @@ class MenuScreen extends StatelessWidget {
                   icon: Icon(Icons.logout),
                   color: Color(0xFFA7A7A7),
                   onPressed: () {
-                     Navigator.pop(
-                                      context,
-                                    );
+                    // Add your action here
                   },),
                 ),
             ],
@@ -108,3 +125,7 @@ class MenuScreen extends StatelessWidget {
     );
   }
 }
+
+
+
+
