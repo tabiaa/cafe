@@ -1,30 +1,27 @@
 import 'package:flutter/material.dart';
-
 class ReusableAppBar extends StatelessWidget {
-  final String txtTitle;
-  const ReusableAppBar({super.key, required this.txtTitle});
+  final String AppBarTitle;
+  const ReusableAppBar({Key? key,
+    required this.AppBarTitle,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      backgroundColor: Colors.white,
-      leading: IconButton(
-        icon: const Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
-        ),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
-      title: Text(
-        txtTitle,
-        style: const TextStyle(
-          color: Colors.black,
-          fontSize: 23,
-        ),
-      ),
+            elevation: 0.0,
+            backgroundColor: Color(0xffffffff),
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back_ios),
+              color: Color(0xFFA7A7A7),
+               
+              onPressed: () {  Navigator.pop(
+                                      context,
+                                    );
+                                },
+            ),
+            title: Text("${AppBarTitle}", style: TextStyle(color: Color(0xFFB6B5B4), fontSize: 16,letterSpacing: 1),),
+        
     );
   }
 }
